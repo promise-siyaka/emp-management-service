@@ -1,0 +1,35 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: employee-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+  profiles:
+    active: default
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/empdb
+#    username: empuser
+#    password: empuser
+#    driver-class-name: org.postgresql.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update   # Or use validate / create-drop / none / create
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#    ip-address: 127.0.0.1
+#    instance-id: ${spring.application.name}:${server.port}
+#jwt:
+#  secret: my-very-secure-and-long-secret-key
+https://github:
+  com/promise-siyaka/emp-management-service:
